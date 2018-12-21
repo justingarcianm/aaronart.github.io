@@ -1,0 +1,77 @@
+body {
+    margin: 50px 0 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+h1, h2, nav {
+    font-family: 'Playfair Display', serif;
+}
+p, .about ul {
+    font-family: 'El Messiri', sans-serif;
+}
+nav ul {
+    margin: auto;
+}
+h1, nav ul li a {
+   letter-spacing: .2em;
+}
+.social {
+    margin-top: 50px;
+    height: 300px;
+}
+.social i {
+    color: black;
+    font-size: 1.1em;
+    padding: 5px;
+}
+.social p {
+    margin-top: 10px;
+    letter-spacing: 0.5em;
+    font-size: .9em;
+}
+.carousel-item img{
+    width: 600px;
+    height:550px;
+    margin: auto;
+}
+.gallery a {
+    transition: ease;
+}
+.gallery a:hover {
+    opacity: .5;
+}
+.gallery img {
+    width: 225px;
+    height: 300px;
+}
+.card-img {
+    padding-top: 35px;
+}
+.about-title {
+    text-decoration: red underline;
+}
+.about {
+    margin-top: 50px;
+}
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about img {
+    width: 375px;
+    height: 300px;
+    padding: 0 50px 50px;
+}
+.about ul {
+    list-style: none;
+}
+
+.contact {
+    margin-top: 50px;
+}
+.contact h2 i {
+    font-size: 3em;
+    color: aquamarine;
+}
