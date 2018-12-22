@@ -21,10 +21,12 @@ h1, nav ul li a {
     margin-top: 50px;
     height: 300px;
 }
+.social a {
+    margin: 10px 20px;
+}
 .social i {
     color: black;
     font-size: 1.1em;
-    padding: 5px;
 }
 .social p {
     margin-top: 10px;
@@ -32,8 +34,8 @@ h1, nav ul li a {
     font-size: .9em;
 }
 .carousel-item img{
-    width: 600px;
-    height: 700px;
+    width: 500px;
+    height: 600px;
     margin: auto;
 }
 .gallery a {
