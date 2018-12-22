@@ -33,7 +33,7 @@ h1, nav ul li a {
 }
 .carousel-item img{
     width: 600px;
-    height:550px;
+    height: 700px;
     margin: auto;
 }
 .gallery a {
@@ -45,8 +45,9 @@ h1, nav ul li a {
 .gallery img {
     width: 225px;
     height: 300px;
+    box-shadow: 5px 10px 5px grey;
 }
-.card-img {
+.thumbnail {
     padding-top: 35px;
 }
 .about-title {
@@ -60,9 +61,10 @@ h1, nav ul li a {
     grid-template-columns: 1fr 1fr;
 }
 .about img {
-    width: 375px;
-    height: 300px;
-    padding: 0 50px 50px;
+    width: 400px;
+    height: 400px;
+    margin: 0 50px 50px;
+    box-shadow: 5px 10px 5px grey;
 }
 .about ul {
     list-style: none;
