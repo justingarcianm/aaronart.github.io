@@ -38,7 +38,7 @@ h1, nav ul li a {
     margin: auto;
 }
 .gallery a {
-    transition: ease;
+    transition: 0.3s;
 }
 .gallery a:hover {
     opacity: .5;
@@ -48,7 +48,7 @@ h1, nav ul li a {
     height: 300px;
     box-shadow: 5px 10px 5px grey;
 }
-.thumbnail {
+.gallery .row {
     padding-top: 35px;
 }
 .about-title {
