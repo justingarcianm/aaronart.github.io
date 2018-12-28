@@ -1,6 +1,8 @@
+/* general styles */
 body {
     margin: 50px 0 0;
     padding: 0;
+    /* fallback font */
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
 }
@@ -10,7 +12,7 @@ h1, h2, nav, .gallery button {
 p, .about ul, .gallery h4 {
     font-family: 'El Messiri', sans-serif;
 }
-nav ul {
+nav ul, .carousel-item img {
     margin: auto;
 }
 h1, nav ul li a {
@@ -20,14 +22,13 @@ h1, nav ul li a {
     text-decoration: underline;
 }
 .social {
-    margin-top: 50px;
     height: 100px;
 }
 .social a {
     margin: 10px 20px;
 }
 .social i {
-    color: black;
+    color: #222;
     font-size: 1.1em;
 }
 .social p {
@@ -35,12 +36,15 @@ h1, nav ul li a {
     letter-spacing: 0.5em;
     font-size: .9em;
 }
+.about, .contact, .social, .gallery .grid {
+    margin-top: 50px;
+}
+/* Home */
 .carousel-item img{
     width: 500px;
     height: 600px;
-    margin: auto;
 }
-
+/* Gallery */
 .gallery .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -50,21 +54,16 @@ h1, nav ul li a {
     transition: 0.3s;
 }
 .gallery a:hover {
-    opacity: .5;
+    opacity: .7;
 }
 .gallery img {
     width: 225px;
     height: 300px;
     box-shadow: 5px 10px 5px grey;
 }
-.gallery .row {
-    padding-top: 35px;
-}
+/* About */
 .about-title {
     text-decoration: red underline;
-}
-.about {
-    margin-top: 50px;
 }
 
 .about img {
@@ -76,26 +75,27 @@ h1, nav ul li a {
 .about ul {
     list-style: none;
 }
-
-.contact {
-    margin-top: 50px;
-}
+/* Contact */
 .contact h2 i {
     font-size: 3em;
     color: aquamarine;
 }
 
+/* Media Queries */
+/* ---------------- */
+/* Gallery Grid */
 @media (max-width:1000px){
     .gallery .grid {
         grid-template-columns: repeat(3, 1fr);
+        margin: 50px auto;
     }
 }
-@media (max-width:750px){
+@media (max-width:850px){
     .gallery .grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (max-width:450px){
+@media (max-width:475px){
     .gallery button {
         margin: 5px;
     }
@@ -104,17 +104,17 @@ h1, nav ul li a {
     }
 }
 
+/* About Grid */
 @media (max-width:550px){
     .about img {
         width: 80vw;
         margin: 0 auto;
     }
     .about .text-left {
-        
         margin-top: 40px;
     }
 }
-
+/* General Queries */
 @media (max-width:400px) {
     header .container {
         padding: 0;
@@ -128,7 +128,7 @@ h1, nav ul li a {
         width: 100%;
         height: 100%;
     }
-    .contact form {
+    form {
         margin-bottom: 50px;
     }
 }
