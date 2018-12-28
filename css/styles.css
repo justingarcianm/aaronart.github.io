@@ -4,10 +4,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
 }
-h1, h2, nav {
+h1, h2, nav, .gallery button {
     font-family: 'Playfair Display', serif;
 }
-p, .about ul {
+p, .about ul, .gallery h4 {
     font-family: 'El Messiri', sans-serif;
 }
 nav ul {
@@ -15,6 +15,9 @@ nav ul {
 }
 h1, nav ul li a {
    letter-spacing: .2em;
+}
+.navbar-light .navbar-nav .active > .nav-link {
+    text-decoration: underline;
 }
 .social {
     margin-top: 50px;
@@ -36,6 +39,12 @@ h1, nav ul li a {
     width: 500px;
     height: 600px;
     margin: auto;
+}
+
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
 }
 .gallery a {
     transition: 0.3s;
@@ -76,13 +85,32 @@ h1, nav ul li a {
     color: aquamarine;
 }
 
+@media (max-width:1000px){
+    .gallery .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:750px){
+    .gallery .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:450px){
+    .gallery button {
+        margin: 5px;
+    }
+    .gallery .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width:550px){
     .about img {
         width: 80vw;
         margin: 0 auto;
     }
     .about .text-left {
-        text-align: center !important;
+        
         margin-top: 40px;
     }
 }
@@ -92,7 +120,7 @@ h1, nav ul li a {
         padding: 0;
     }
     .navbar-expand .navbar-nav .nav-link {
-        padding: 1px;
+        padding: 2px;
         font-size: .8em;
         margin: auto;
     }
