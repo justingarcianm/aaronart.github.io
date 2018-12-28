@@ -9,10 +9,10 @@ var all = document.querySelector(".all");
 var filterImg = document.querySelectorAll(".imgFilter");
 
 // assign variables for images
-var imgPeople = document.querySelectorAll(".row .people");
-var imgAnimals = document.querySelectorAll(".row .animals");
-var imgObjects = document.querySelectorAll(".row .objects");
-var imgLocations = document.querySelectorAll(".row .locations");
+var imgPeople = document.querySelectorAll(".grid .people");
+var imgAnimals = document.querySelectorAll(".grid .animals");
+var imgObjects = document.querySelectorAll(".grid .objects");
+var imgLocations = document.querySelectorAll(".grid .locations");
 
 
 //  events for clicking on filter bar

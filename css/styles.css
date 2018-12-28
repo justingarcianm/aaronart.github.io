@@ -31,6 +31,9 @@ h1, nav ul li a {
     color: #222;
     font-size: 1.1em;
 }
+.social i:hover, .social i:active {
+color: lightcoral;
+}
 .social p {
     margin-top: 10px;
     letter-spacing: 0.5em;
@@ -45,6 +48,11 @@ h1, nav ul li a {
     height: 600px;
 }
 /* Gallery */
+button:hover, button .active,.btn.focus, .btn:focus {
+    color: #eee;
+    background-color: lightcoral;
+    box-shadow: none;
+}
 .gallery .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -62,8 +70,14 @@ h1, nav ul li a {
     box-shadow: 5px 10px 5px grey;
 }
 /* About */
-.about-title {
-    text-decoration: red underline;
+.about a {
+color: lightcoral;
+}
+.about a:hover {
+    text-decoration: underline;
+}
+.about-title h2{
+    text-decoration: lightcoral underline;
 }
 
 .about img {
@@ -78,7 +92,7 @@ h1, nav ul li a {
 /* Contact */
 .contact h2 i {
     font-size: 3em;
-    color: aquamarine;
+    color: lightcoral;
 }
 
 /* Media Queries */
