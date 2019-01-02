@@ -6,6 +6,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
 }
+h1 span {
+    color: darkred;
+    font-size: 1.5em;
+}
 h1, h2, nav, .gallery button {
     font-family: 'Playfair Display', serif;
 }
@@ -16,10 +20,11 @@ nav ul, .carousel-item img {
     margin: auto;
 }
 h1, nav ul li a {
-   letter-spacing: .2em;
+   letter-spacing: .1em;
 }
 .navbar-light .navbar-nav .active > .nav-link {
     text-decoration: underline;
+    color: darkred;
 }
 .social {
     height: 100px;
@@ -32,7 +37,7 @@ h1, nav ul li a {
     font-size: 1.1em;
 }
 .social i:hover, .social i:active {
-color: lightcoral;
+color: darkred;
 }
 .social p {
     margin-top: 10px;
@@ -48,10 +53,14 @@ color: lightcoral;
     height: 600px;
 }
 /* Gallery */
-button:hover, button .active,.btn.focus, .btn:focus {
-    color: #eee;
-    background-color: lightcoral;
-    box-shadow: none;
+.gallery .btn-link{
+    color: #333;
+    transition: .3s;
+}
+.gallery .btn-link:hover, button:hover, button .active,.btn.focus, .btn:focus {
+    color: darkred;
+    letter-spacing: .1em;
+    text-decoration: line-through;
 }
 .gallery .grid {
     display: grid;
@@ -71,7 +80,7 @@ button:hover, button .active,.btn.focus, .btn:focus {
 }
 /* About */
 .about a {
-color: lightcoral;
+color: darkred;
 }
 .about a:hover {
     text-decoration: underline;
@@ -92,7 +101,7 @@ color: lightcoral;
 /* Contact */
 .contact h2 i {
     font-size: 3em;
-    color: lightcoral;
+    color: darkred;
 }
 
 /* Media Queries */
