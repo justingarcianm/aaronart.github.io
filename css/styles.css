@@ -143,9 +143,10 @@ color: darkred;
         padding: 0;
     }
     .navbar-expand .navbar-nav .nav-link {
-        padding: 2px;
-        font-size: .8em;
-        margin: auto;
+        margin: 2px;
+        font-size: .9em;
+        padding-left: .1rem;
+        padding-right: .1rem;
     }
     .carousel-item img{
         width: 100%;
