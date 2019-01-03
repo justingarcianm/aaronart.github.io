@@ -6,14 +6,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
 }
-h1 span {
+h1 span, .navbar-light .navbar-nav .active > .nav-link, .social i:hover, .social i:active {
     color: darkred;
+}
+h1 span {
     font-size: 1.5em;
 }
 h1, h2, nav, .gallery button {
     font-family: 'Playfair Display', serif;
 }
-p, .about ul, .gallery h4 {
+p, .about ul, .gallery h4, .imgFilter p {
     font-family: 'El Messiri', sans-serif;
 }
 nav ul, .carousel-item img {
@@ -24,7 +26,6 @@ h1, nav ul li a {
 }
 .navbar-light .navbar-nav .active > .nav-link {
     text-decoration: underline;
-    color: darkred;
 }
 .social {
     height: 100px;
@@ -35,9 +36,6 @@ h1, nav ul li a {
 .social i {
     color: #222;
     font-size: 1.1em;
-}
-.social i:hover, .social i:active {
-color: darkred;
 }
 .social p {
     margin-top: 10px;
@@ -53,6 +51,18 @@ color: darkred;
     height: 600px;
 }
 /* Gallery */
+.gallery h4 {
+    margin-top: 20px;
+    border-bottom: solid 3px darkred;
+    width: 50%;
+    margin: auto;
+}
+.gallery a {
+    color: darkred;
+}
+.gallery .unavailable {
+    text-decoration: line-through;
+}
 .gallery .btn-link{
     color: #333;
     transition: .3s;
@@ -65,7 +75,7 @@ color: darkred;
 .gallery .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 20px;
+    grid-gap: 20px;
 }
 .gallery a {
     transition: 0.3s;
@@ -74,9 +84,12 @@ color: darkred;
     opacity: .7;
 }
 .gallery img {
-    width: 225px;
-    height: 300px;
+    width: 100%;
     box-shadow: 5px 10px 5px grey;
+}
+.gallery p {
+    margin: 15px;
+    font-size: .9em;
 }
 /* About */
 .about a {
@@ -86,9 +99,8 @@ color: darkred;
     text-decoration: underline;
 }
 .about-title h2{
-    text-decoration: lightcoral underline;
+    text-decoration: darkred underline;
 }
-
 .about img {
     width: 400px;
     height: 400px;
@@ -99,9 +111,14 @@ color: darkred;
     list-style: none;
 }
 /* Contact */
+.contact h2 i, .contact strong, .contact ::placeholder {
+    color: darkred;
+}
 .contact h2 i {
     font-size: 3em;
-    color: darkred;
+}
+.contact ::placeholder {
+    opacity: .5;
 }
 
 /* Media Queries */

@@ -111,4 +111,6 @@ function allFilter() {
     })
 }
 
+
+
 // Although this is messy and not DRY qualified, my goal was to simple get it to work and in the future I will improve on the code
