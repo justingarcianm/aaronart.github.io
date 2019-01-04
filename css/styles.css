@@ -70,7 +70,8 @@ h1, nav ul li a {
 .gallery .btn-link:hover, button:hover, button .active,.btn.focus, .btn:focus {
     color: darkred;
     letter-spacing: .1em;
-    text-decoration: line-through;
+    text-decoration: underline;
+    font-weight: bold;
 }
 .gallery .grid {
     display: grid;
@@ -102,9 +103,7 @@ color: darkred;
     text-decoration: darkred underline;
 }
 .about img {
-    width: 400px;
-    height: 400px;
-    margin: 0 50px 50px;
+    width: 100%;
     box-shadow: 5px 10px 5px grey;
 }
 .about ul {
@@ -127,7 +126,6 @@ color: darkred;
 @media (max-width:1000px){
     .gallery .grid {
         grid-template-columns: repeat(3, 1fr);
-        margin: 50px auto;
     }
 }
 @media (max-width:850px){
@@ -143,28 +141,14 @@ color: darkred;
         grid-template-columns: 1fr;
     }
 }
-
-/* About Grid */
-@media (max-width:550px){
-    .about img {
-        width: 80vw;
-        margin: 0 auto;
-    }
+/* About Text */
+@media (max-width:766px){
     .about .text-left {
         margin-top: 40px;
     }
 }
 /* General Queries */
-@media (max-width:400px) {
-    header .container {
-        padding: 0;
-    }
-    .navbar-expand .navbar-nav .nav-link {
-        margin: 2px;
-        font-size: .9em;
-        padding-left: .1rem;
-        padding-right: .1rem;
-    }
+@media (max-width:550px) {
     .carousel-item img{
         width: 100%;
         height: 100%;
