@@ -1,3 +1,8 @@
+// speed up carousel on index page
+$('.carousel').carousel({
+    interval: 2000
+})
+
 // Terrible and messy yet functional filter for gallery page
 
 // assign variables for filter bar and imgs
