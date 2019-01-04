@@ -1,18 +1,18 @@
 // Terrible and messy yet functional filter for gallery page
 
 // assign variables for filter bar and imgs
-var people = document.querySelector(".people");
-var animals = document.querySelector(".animals");
-var objects = document.querySelector(".objects");
-var locations = document.querySelector(".locations");
-var all = document.querySelector(".all");
-var filterImg = document.querySelectorAll(".imgFilter");
+var people = document.querySelector(".people"),
+    animals = document.querySelector(".animals"),
+    objects = document.querySelector(".objects"),
+    locations = document.querySelector(".locations"),
+    all = document.querySelector(".all"),
+    filterImg = document.querySelectorAll(".imgFilter");
 
 // assign variables for images
-var imgPeople = document.querySelectorAll(".grid .people");
-var imgAnimals = document.querySelectorAll(".grid .animals");
-var imgObjects = document.querySelectorAll(".grid .objects");
-var imgLocations = document.querySelectorAll(".grid .locations");
+var imgPeople = document.querySelectorAll(".grid .people"),
+    imgAnimals = document.querySelectorAll(".grid .animals"),
+    imgObjects = document.querySelectorAll(".grid .objects"),
+    imgLocations = document.querySelectorAll(".grid .locations");
 
 
 //  events for clicking on filter bar
@@ -110,7 +110,18 @@ function allFilter() {
         }
     })
 }
+// store image caption link to price variable
+var price = document.querySelectorAll(".gallery .imgFilter span");
 
+(function () {
+    for (var i = 0; i < price.length; i++) {
+        // if the price has the unavailable class
+        if (price[i].classList.contains("unavailable")) {
+            // replace the link with text
+            price[i].textContent = "unavailable";
+        }
+    }
+})();
 
 
 // Although this is messy and not DRY qualified, my goal was to simple get it to work and in the future I will improve on the code
