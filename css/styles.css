@@ -96,9 +96,6 @@ h1, nav ul li a {
 .about a {
 color: darkred;
 }
-.about a:hover {
-    text-decoration: underline;
-}
 .about-title h2{
     text-decoration: darkred underline;
 }
@@ -115,6 +112,7 @@ color: darkred;
 }
 .contact h2 i {
     font-size: 3em;
+    opacity: .6;
 }
 .contact ::placeholder {
     opacity: .5;
