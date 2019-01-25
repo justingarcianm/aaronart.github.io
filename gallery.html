@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aaron Art | GALLERY</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=El+Messiri|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
@@ -13,11 +14,13 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 
 <body>
     <main class="container text-center">
-        <header class="container">
+        <header class="container  w3-animate-top">
             <h1><span>A</span>aron <span>A</span>rt</h1>
             <nav class="navbar navbar-expand navbar-light ">
                 <ul class="navbar-nav">
@@ -36,7 +39,7 @@
                 </ul>
             </nav>
         </header>
-        <section class="gallery">
+        <section class="gallery  w3-animate-top">
             <h4>Focus on:</h4>
             <div class="filterbox">
                 <button class="btn btn-link all active">All</button>
@@ -46,10 +49,10 @@
                 <button class="btn btn-link animals">Animals</button>
             </div>
 
-            <div class="grid">
+            <div class="grid w3-animate-opacity">
                 <div class="imgFilter people">
                     <a href="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/48390373_777847252567988_9067813702987677696_n.jpg?_nc_cat=106&_nc_ht=scontent-sjc3-1.xx&oh=037550cfa3c4d10b997a33facdeb225d&oe=5C992B1C"
-                        data-toggle="lightbox" data-gallery="example-gallery" class="imgFilter people">
+                        data-toggle="lightbox" data-gallery="example-gallery">
                         <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/48390373_777847252567988_9067813702987677696_n.jpg?_nc_cat=106&_nc_ht=scontent-sjc3-1.xx&oh=037550cfa3c4d10b997a33facdeb225d&oe=5C992B1C">
                     </a>
                     <p>Sophia Loren | <span class="unavailable"><a href="#">$price</a></span></p>
@@ -182,6 +185,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+    <!-- jQuery for lightbox -->
     <script>
         $(document).on('click', '[data-toggle="lightbox"]', function (event) {
             event.preventDefault();
@@ -192,7 +196,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-    <script src="js/main.js"></script>
+
+    <script src="js/gallery.js"></script>
 </body>
 
 </html>

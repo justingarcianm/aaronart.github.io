@@ -9,8 +9,6 @@
 ## Future ideas
     I eventually want to link up the facebook photos to the gallery page so the gallery section will constantly be up to date with his finished work.
 
-    I want to improve the filter because it is very messy js.
-
     Connecting to a backend language and database can help set up the contact form to store contacts and communicate with potential clients. as well as adding captcha api.
 
 ## Languages used
