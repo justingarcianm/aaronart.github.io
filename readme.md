@@ -23,6 +23,3 @@
 
 ## API
     * Facebook page feed
-
-## Site
-https://justingarcianm.github.io/aaronart.github.io/
